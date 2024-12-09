@@ -18,7 +18,7 @@ func Load() {
 	}
 
 	Port = os.Getenv("API_PORT")
-	StringConnection = fmt.Sprintf("%s:%s@/%s?charset=utf8&parseTime=True&loc=Local",
+	StringConnection = fmt.Sprintf("%s:%s@tcp(192.168.0.20:3306)/%s?charset=utf8&parseTime=True&loc=Local",
 		os.Getenv("DB_USER"),
 		os.Getenv("DB_PASSWORD"),
 		os.Getenv("DB_NAME"),

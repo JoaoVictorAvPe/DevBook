@@ -6,6 +6,6 @@ CREATE TABLE user (
     name varchar(50) not null,
     nick varchar(50) not null unique,
     email varchar(50) not null unique,
-    senha varchar(32) not null,
+    password varchar(32) not null,
     created_in timestamp default current_timestamp()
  ) ENGINE=INNODB;
